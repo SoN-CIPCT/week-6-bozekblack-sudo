@@ -1,0 +1,32 @@
+web_users = ["alicia", "michael", "andrew", "carter", "michele"]
+new_users = ["alicia", "michael", "jonathan", "jeffrey", "paul"]
+for user in new_users:
+    if user in web_users:
+        print(f"{user}: This user name is already in use. Please choose a different user name.")
+    else:
+        print(f"{user}: This user name is available.")
+
+cities = {}
+cities["MilanoCortina"] = {
+    "country": "Italy",
+    "population": 8000000,
+    "fact": "MilanoCortina will host the 2026 Winter Olympics."
+}
+cities["New York"] = {
+    "country": "United States",
+    "population": 8500000,
+    "fact": "New York is known as the Big Apple."
+}
+cities["Okinawa"] = {
+    "country": "Japan",
+    "population": 1400000,
+    "fact": "Okinawa is famous for its beautiful beaches and rich culture."
+}
+for city, info in cities.items():
+    print(
+        f"City: {city} | "
+        f"Country: {info['country']} | "
+        f"Population: {info['population']} | "
+        f"Fact: {info['fact']}"
+    )
+    
